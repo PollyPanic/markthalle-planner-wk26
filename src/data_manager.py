@@ -1,7 +1,10 @@
 import json
 import uuid
 import os
+import copy
 from datetime import datetime, timedelta
+
+from src.config import SLIDES_JSON_FILE
 
 class DataManager:
     def __init__(self, json_path):
@@ -21,6 +24,30 @@ class DataManager:
         os.makedirs(os.path.dirname(self.json_path), exist_ok=True)
         with open(self.json_path, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
+            
+        slides_data = copy.deepcopy(self.data)
+        days = slides_data['schedule']['conference']['days']
+        blocked_types = ['infobooth', 'infostand','exhibition', 'ausstellung']
+        
+        for day in days:
+            for room_key in list(day['rooms'].keys()):
+                original_events = day['rooms'][room_key]
+                filtered_events = []
+                
+                for event in original_events:
+                    raw_type = event.get('type', 'talk')
+                    type_check = str(raw_type).lower()
+                    
+                    if type_check not in blocked_types:
+                        filtered_events.append(event)
+                        
+                    #DEBUGGING
+                    else:
+                        print(f"Entferne: {event.get('title')} (Typ: {type_check})")
+                day['rooms'][room_key] = filtered_events
+                
+        with open(SLIDES_JSON_FILE, 'w', encoding='utf-8') as f:
+            json.dump(slides_data, f, indent=2, ensure_ascii=False)
 
     def reload_data(self):
         self.data = self._load_data()
@@ -90,6 +117,7 @@ class DataManager:
         return None
 
     def delete_event(self, guid):
+        self.reload_data()
         days = self.data['schedule']['conference']['days']
         something_deleted = False
         for day in days:
@@ -104,6 +132,7 @@ class DataManager:
         return something_deleted
 
     def update_event(self, guid, title, description, speaker, start_time_iso, duration, room_name, event_type, language):
+        self.reload_data()
         lang_map = {"Deutsch": "de", "English": "en", "Français": "fr"}
         type_map = {
             "Talk": "talk", "Workshop": "workshop", "Hands-On": "hands-on",
@@ -136,6 +165,7 @@ class DataManager:
         return self._insert_event_into_schedule(event_data)
 
     def _insert_event_into_schedule(self, new_event):
+        self.reload_data()
         days = self.data['schedule']['conference']['days']
         event_date_str = new_event['date'].split("T")[0]
         target_day = None
