@@ -18,8 +18,14 @@ class DataManager:
                 return self._create_empty_schedule()
 
     def save_data(self):
+        os.makedirs(os.path.dirname(self.json_path), exist_ok=True)
         with open(self.json_path, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
+
+    def reload_data(self):
+        """Reload data from file to ensure freshness"""
+        self.data = self._load_data()
+        return self.data
 
     def _create_empty_schedule(self):
         return {

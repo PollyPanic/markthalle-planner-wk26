@@ -5,7 +5,7 @@ from src.index import manager
 from src.config import TARGET_COLUMNS
 
 def build_schedule_view():
-    data = manager._load_data()
+    data = manager.reload_data()
     days = data['schedule']['conference']['days']
     tabs = []
 
