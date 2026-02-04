@@ -1,15 +1,10 @@
-# Virtual Environment
 venv/
 env/
 ENV/
-
-# Python Cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -26,17 +21,11 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# PyInstaller
 *.manifest
 *.spec
-
-# Logs
 *.log
 pip-log.txt
 pip-delete-this-directory.txt
-
-# Unit test / coverage
 htmlcov/
 .tox/
 .coverage
@@ -47,22 +36,14 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-
-# Environment variables
 .env
 .venv
-
-# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Project specific
 *.bak
 sicherheitskopie/
