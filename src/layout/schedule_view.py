@@ -4,6 +4,84 @@ from datetime import datetime, timedelta
 from src.index import manager
 from src.config import TARGET_COLUMNS
 
+def calculate_end_time(start_dt, duration_str):
+    try:
+        dur_parts = duration_str.split(':')
+        duration = timedelta(hours=int(dur_parts[0]), minutes=int(dur_parts[1]))
+        end_dt = start_dt + duration
+        return end_dt.strftime('%H:%M')
+    except:
+        return "??"
+
+def create_event_card(event):
+    guid = event['guid']
+    start_dt = datetime.fromisoformat(event['date'])
+    end_time_str = calculate_end_time(start_dt, event['duration'])
+    time_str = f"{start_dt.strftime('%H:%M')} - {end_time_str}"
+    
+    evt_type_raw = event.get('type', 'talk')
+    evt_type = evt_type_raw.capitalize()
+    
+    person_names = ", ".join([p.get('public_name', p.get('name', '???')) for p in event.get('persons', [])])
+
+    type_class = f"event-type-{evt_type_raw}"
+    border_class = f"border-type-{evt_type_raw}"
+
+    real_room_name = event.get('room', '')
+    room_element = None
+    if real_room_name and real_room_name != 'OTHER':
+        room_element = html.Span(
+            [html.I(className="bi bi-geo-alt-fill me-1"), real_room_name], 
+            className="small text-muted fw-bold align-middle ms-2" 
+        )
+
+    return dbc.Card([
+        dbc.CardBody([
+            
+
+            html.Div([
+
+                html.Div([
+                    html.Span(time_str, className="badge bg-light text-dark border me-1 align-middle"),
+                    html.Span(evt_type, className=f"badge {type_class} align-middle"),
+                    room_element 
+                ], className="d-inline-block"), 
+
+                dbc.Button(
+                    html.I(className="bi bi-pencil-square"),
+                    id={'type': 'edit-btn', 'index': guid},
+                    color="link",
+                    size="sm",
+                    className="p-0 text-muted align-top ms-2"
+                )
+            ], className="d-flex justify-content-between align-items-start mb-2"),
+
+            html.H5(event['title'], className="card-title fw-bold mb-1"),
+
+            dbc.Button(
+                "▼ Details",
+                id={'type': 'card-toggler', 'index': guid},
+                color="link",
+                size="sm",
+                className="p-0 text-decoration-none text-secondary mt-1",
+                style={"fontSize": "0.85rem", "boxShadow": "none"}
+            ),
+
+            dbc.Collapse([
+                html.Hr(className="my-2"),
+                
+                html.Div([
+                    html.I(className="bi bi-person-fill me-2"),
+                    html.Span(person_names, className="fw-bold")
+                ], className="mb-2 text-dark"),
+                
+                html.P(event.get('description', ''), className="card-text small text-secondary", 
+                       style={'whiteSpace': 'pre-line'}),
+                       
+            ], id={'type': 'card-collapse', 'index': guid}, is_open=False),
+        ])
+    ], className=f"mb-3 shadow-sm border-top-0 border-end-0 border-bottom-0 border-start border-4 {border_class}")
+
 def build_schedule_view():
     data = manager.reload_data()
     days = data['schedule']['conference']['days']
@@ -20,7 +98,8 @@ def build_schedule_view():
 
         for room_key in TARGET_COLUMNS:
             events = day['rooms'].get(room_key, [])
-            events.sort(key=lambda x: x['date'])
+            events.sort(key=lambda x: (x['date'], x.get('title', '').lower()))
+            
             column_content = []
             column_content.append(
                 html.H4(room_key, className="text-center mb-4 pb-2 border-bottom sticky-top bg-light pt-2",
@@ -33,50 +112,7 @@ def build_schedule_view():
                 )
 
             for event in events:
-                start_dt = datetime.fromisoformat(event['date'])
-                dur_parts = event['duration'].split(':')
-                duration = timedelta(hours=int(dur_parts[0]), minutes=int(dur_parts[1]))
-                end_dt = start_dt + duration
-                time_str = f"{start_dt.strftime('%H:%M')} - {end_dt.strftime('%H:%M')}"
-                evt_type_raw = event.get('type', 'talk')
-                evt_type = evt_type_raw.capitalize()
-                evt_lang = event.get('language', 'de').upper()
-                real_room_name = event.get('room', '')
-
-                type_class = f"event-type-{evt_type_raw}"
-                border_class = f"border-type-{evt_type_raw}"
-
-                location_badge = None
-                if real_room_name != 'Markthalle' and real_room_name != 'OTHER':
-                    location_badge = html.Div([
-                        html.I(className="bi bi-geo-alt-fill me-1 text-dark"),
-                        html.Span(real_room_name, className="fw-bold text-dark")
-                    ], className="mb-2 border-bottom pb-1")
-
-                card = dbc.Card([
-                    dbc.CardBody([
-                        location_badge,
-                        html.Div([
-                            html.Div([
-                                html.Span(time_str, className="badge bg-light text-dark border me-1"),
-                                html.Span(evt_type, className=f"badge {type_class} me-1"),
-                                html.Span(evt_lang, className="badge bg-info text-white"),
-                            ]),
-                            dbc.Button(
-                                html.I(className="bi bi-pencil-square"),
-                                id={'type': 'edit-btn', 'index': event['guid']},
-                                color="link",
-                                size="sm",
-                                className="p-0 text-muted"
-                            )
-                        ], className="d-flex justify-content-between align-items-start mb-2"),
-                        html.H5(event['title'], className="card-title fw-bold mt-1"),
-                        html.P([html.I(className="bi bi-person-fill me-1"), event['persons'][0]['name']],
-                               className="text-muted small mb-2"),
-                        html.P(event['description'], className="card-text small text-secondary")
-                    ])
-                ], className=f"mb-3 shadow-sm border-top-0 border-end-0 border-bottom-0 border-start border-4 {border_class}")
-                column_content.append(card)
+                column_content.append(create_event_card(event))
 
             room_columns.append(dbc.Col(column_content, width=12, lg=col_width, className="px-2 border-end"))
 
