@@ -1,0 +1,174 @@
+{
+  "schedule": {
+    "version": "1.0",
+    "conference": {
+      "acronym": "markthalle-wk26",
+      "title": "Programm Markthalle Winterkongress 2026",
+      "start": "2026-02-20",
+      "end": "2026-02-21",
+      "daysCount": 2,
+      "timeslot_duration": "00:15",
+      "days": [
+        {
+          "index": 1,
+          "date": "2026-02-20",
+          "day_start": "2026-02-20T19:00:00+01:00",
+          "day_end": "2026-02-20T22:00:00+01:00",
+          "rooms": {
+            "SoS-Kubus": [],
+            "Markthalle": [
+              {
+                "guid": "6249d1bb-1e28-4e89-a147-7721c07ef102",
+                "id": 1770226255,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "ki-escape-game-\"orakel\"",
+                "url": "",
+                "title": "KI Escape Game \"Orakel\"",
+                "subtitle": "",
+                "track": null,
+                "type": "game",
+                "language": "de",
+                "abstract": "Scan den QR-Code und knacke den Zahlencode. \nSpoil...",
+                "description": "Scan den QR-Code und knacke den Zahlencode. \nSpoiler: Chatbots können lügen ;-)",
+                "persons": [
+                  {
+                    "name": "Intersections",
+                    "public_name": "Intersections",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "date": "2026-02-21",
+          "day_start": "2026-02-21T11:00:00+01:00",
+          "day_end": "2026-02-21T20:00:00+01:00",
+          "rooms": {
+            "SoS-Kubus": [
+              {
+                "guid": "2e9bd2c8-af2b-49db-b7a2-d66de2e16e14",
+                "id": 1770224024,
+                "date": "2026-02-21T17:00:00+01:00",
+                "start": "17:00",
+                "duration": "00:30",
+                "room": "SoS-Kubus",
+                "slug": "ki-escape-game-“orakel”-–-auflösung-und-diskussion",
+                "url": "",
+                "title": "KI Escape Game “Orakel” – Auflösung und Diskussion",
+                "subtitle": "",
+                "track": null,
+                "type": "workshop",
+                "language": "de",
+                "abstract": "Nachbesprechung, Hintergründe und Austausch zum KI...",
+                "description": "Nachbesprechung, Hintergründe und Austausch zum KI Escape Game “Orakel” ",
+                "persons": [
+                  {
+                    "name": "Sheerah, Intersections",
+                    "public_name": "Sheerah, Intersections",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              }
+            ],
+            "Markthalle": [
+              {
+                "guid": "848ad2a1-00fc-4b01-aaf3-fe59b2d1268f",
+                "id": 1770225662,
+                "date": "2026-02-21T14:00:00+01:00",
+                "start": "14:00",
+                "duration": "01:00",
+                "room": "tbd",
+                "slug": "ai-voice-mod-zum-ausprobieren",
+                "url": "",
+                "title": "AI Voice Mod zum Ausprobieren",
+                "subtitle": "",
+                "track": null,
+                "type": "hands-on",
+                "language": "de",
+                "abstract": "Ergänzung zum Talk \"DIGITAL SONIC IDENTITIES - An ...",
+                "description": "Ergänzung zum Talk \"DIGITAL SONIC IDENTITIES - An ethical debate on AI voice tech in gaming\" - Probiere selbst aus, wie Gamer:innen mit AI Voice Modification Tools in Game-Voice Chats ihre Stimme verändern.",
+                "persons": [
+                  {
+                    "name": "Sheerah Kim",
+                    "public_name": "Sheerah Kim",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "7424e9c5-45ba-4663-b474-77a92f5aa3e4",
+                "id": 1770227523,
+                "date": "2026-02-21T20:00:00+01:00",
+                "start": "20:00",
+                "duration": "04:00",
+                "room": "Markthalle",
+                "slug": "abbau-markthalle",
+                "url": "",
+                "title": "Abbau Markthalle",
+                "subtitle": "",
+                "track": null,
+                "type": "other",
+                "language": "de",
+                "abstract": "Abbau der Markthalle - Helfer:innen gesucht!...",
+                "description": "Abbau der Markthalle - Helfer:innen gesucht!",
+                "persons": [
+                  {
+                    "name": "Team Winterkongress",
+                    "public_name": "Team Winterkongress",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "380886fd-e9ab-45ef-85c6-29fef7c76bac",
+                "id": 1770232888,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "ki-escape-game-\"orakel\"",
+                "url": "",
+                "title": "KI Escape Game \"Orakel\"",
+                "subtitle": "",
+                "track": null,
+                "type": "game",
+                "language": "de",
+                "abstract": "Scan den QR-Code und knacke den Zahlencode. \nSpoil...",
+                "description": "Scan den QR-Code und knacke den Zahlencode. \nSpoiler: Chatbots können lügen ;-)",
+                "persons": [
+                  {
+                    "name": "Intersections",
+                    "public_name": "Intersections",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              }
+            ]
+          }
+        }
+      ],
+      "rooms": [
+        {
+          "name": "SoS-Kubus",
+          "guid": "679f27ba-f9ba-41d4-b27a-980f5a5135ee"
+        }
+      ]
+    }
+  }
+}
