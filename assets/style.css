@@ -122,7 +122,6 @@ h1 {
     color: white !important;
 }
 
-/* Event-Type Farben für Badges */
 .event-type-talk {
     background-color: #4aa84e !important;
     color: white !important;
@@ -168,7 +167,6 @@ h1 {
     color: white !important;
 }
 
-/* Border-Farben für Cards */
 .border-type-talk {
     border-left: 6px solid #4aa84e !important;
 }
