@@ -1,0 +1,694 @@
+{
+  "schedule": {
+    "version": "1.0",
+    "conference": {
+      "acronym": "markthalle-wk26",
+      "title": "Programm Markthalle Winterkongress 2026",
+      "start": "2026-02-20",
+      "end": "2026-02-21",
+      "daysCount": 2,
+      "timeslot_duration": "00:15",
+      "days": [
+        {
+          "index": 1,
+          "date": "2026-02-20",
+          "day_start": "2026-02-20T19:00:00+01:00",
+          "day_end": "2026-02-20T22:00:00+01:00",
+          "rooms": {
+            "SoS-Kubus": [],
+            "Markthalle": [
+              {
+                "guid": "6249d1bb-1e28-4e89-a147-7721c07ef102",
+                "id": 1770226255,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "ki-escape-game-\"orakel\"",
+                "url": "",
+                "title": "KI Escape Game \"Orakel\"",
+                "subtitle": "",
+                "track": null,
+                "type": "game",
+                "language": "de",
+                "abstract": "Scan den QR-Code und knacke den Zahlencode. \nSpoil...",
+                "description": "Scan den QR-Code und knacke den Zahlencode. \nSpoiler: Chatbots können lügen ;-)",
+                "persons": [
+                  {
+                    "name": "Intersections",
+                    "public_name": "Intersections",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "fdbb7f85-a51f-4c1f-a88d-ca28e45d206c",
+                "id": 1770226658,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "algorithmwatch-ch",
+                "url": "",
+                "title": "AlgorithmWatch CH",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "AlgorithmWatch CH",
+                    "public_name": "AlgorithmWatch CH",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "b67ade9d-2dd9-4be2-b607-fcebae6ed0aa",
+                "id": 1770226842,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "woz-die-wochenzeitung",
+                "url": "",
+                "title": "WOZ Die Wochenzeitung",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "WOZ Die Wochenzeitung",
+                    "public_name": "WOZ Die Wochenzeitung",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "2f7e5809-e505-46a0-8cd0-6e8cb43cc850",
+                "id": 1770226912,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "wikimedia",
+                "url": "",
+                "title": "Wikimedia",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "Wikimedia",
+                    "public_name": "Wikimedia",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "c6ca3850-ca10-4583-a4aa-44f620aa0d64",
+                "id": 1770229911,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "opendata.ch",
+                "url": "",
+                "title": "Opendata.ch",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "Opendata.ch",
+                    "public_name": "Opendata.ch",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "508dba16-a8de-497f-9088-1e1d9b081586",
+                "id": 1770232316,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Eingangsbereich",
+                "slug": "live-cartoons-von-alex-steiner",
+                "url": "",
+                "title": "Live-Cartoons von Alex Steiner",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Work in progress ;-) \nKommt regelmässig vorbei und...",
+                "description": "Work in progress ;-) \nKommt regelmässig vorbei und schaut euch die neuesten Cartoons vom diesjährigen Winterkongress an! ",
+                "persons": [
+                  {
+                    "name": "Alex Steiner, brotcast.ch",
+                    "public_name": "Alex Steiner, brotcast.ch",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "2a1a915f-b707-4561-a805-7478bf510d49",
+                "id": 1770232338,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "überall",
+                "slug": "mountainbytes-poster",
+                "url": "",
+                "title": "MountainBytes-Poster",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Auswahl der Poster/T-Shirt-Motive der diesjährigen...",
+                "description": "Auswahl der Poster/T-Shirt-Motive der diesjährigen MountainBytes",
+                "persons": [
+                  {
+                    "name": "MountainBytes",
+                    "public_name": "MountainBytes",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "e0ba2053-d7bc-4b3e-aa30-53b295e32681",
+                "id": 1770232353,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Lounge / Projektorraum",
+                "slug": "mountainbytes-demos",
+                "url": "",
+                "title": "MountainBytes-Demos",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Auswahl an Demos in entspanntem Ambiente...",
+                "description": "Auswahl an Demos in entspanntem Ambiente",
+                "persons": [
+                  {
+                    "name": "MountainBytes",
+                    "public_name": "MountainBytes",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "05d0154a-b53b-4828-9296-4dcecf7f4990",
+                "id": 1770232386,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "dezentrum:-drei-digitale-zukünfte-der-demokratie-2050",
+                "url": "",
+                "title": "Dezentrum: Drei digitale Zukünfte der Demokratie 2050",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Wie wirkt sich die Digitalisierung auf unsere Demo...",
+                "description": "Wie wirkt sich die Digitalisierung auf unsere Demokratie aus? - Zukunftsszenarien für eine (digitale) Demokratie im Jahr 2050, erzählt durch je eine Kurzgeschichte und ein spekulatives Artefakt.\n",
+                "persons": [
+                  {
+                    "name": "Dezentrum",
+                    "public_name": "Dezentrum",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "6711861b-31f3-42a2-8994-3ae032f0c832",
+                "id": 1770232415,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "bilderausstellung-j.-zahn",
+                "url": "",
+                "title": "Bilderausstellung J. Zahn",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Ausgewählte Cartoons...",
+                "description": "Ausgewählte Cartoons",
+                "persons": [
+                  {
+                    "name": "Joachim Zahn, zischtig.ch",
+                    "public_name": "Joachim Zahn, zischtig.ch",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "9e2845fd-e878-4841-97bf-49c32f4387ca",
+                "id": 1770232435,
+                "date": "2026-02-20T19:00:00+01:00",
+                "start": "19:00",
+                "duration": "05:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "ivo-herzig:-leave-us-alone-(2024)",
+                "url": "",
+                "title": "Ivo Herzig: Leave us alone (2024)",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "en",
+                "abstract": "Watch the surveillance industry in an intimate mom...",
+                "description": "Watch the surveillance industry in an intimate moment, interactive robotic installation.",
+                "persons": [
+                  {
+                    "name": "Ivo Herzig",
+                    "public_name": "Ivo Herzig",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "date": "2026-02-21",
+          "day_start": "2026-02-21T11:00:00+01:00",
+          "day_end": "2026-02-21T20:00:00+01:00",
+          "rooms": {
+            "SoS-Kubus": [
+              {
+                "guid": "2e9bd2c8-af2b-49db-b7a2-d66de2e16e14",
+                "id": 1770224024,
+                "date": "2026-02-21T17:00:00+01:00",
+                "start": "17:00",
+                "duration": "00:30",
+                "room": "SoS-Kubus",
+                "slug": "ki-escape-game-“orakel”-–-auflösung-und-diskussion",
+                "url": "",
+                "title": "KI Escape Game “Orakel” – Auflösung und Diskussion",
+                "subtitle": "",
+                "track": null,
+                "type": "workshop",
+                "language": "de",
+                "abstract": "Nachbesprechung, Hintergründe und Austausch zum KI...",
+                "description": "Nachbesprechung, Hintergründe und Austausch zum KI Escape Game “Orakel” ",
+                "persons": [
+                  {
+                    "name": "Sheerah, Intersections",
+                    "public_name": "Sheerah, Intersections",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              }
+            ],
+            "Markthalle": [
+              {
+                "guid": "848ad2a1-00fc-4b01-aaf3-fe59b2d1268f",
+                "id": 1770225662,
+                "date": "2026-02-21T14:00:00+01:00",
+                "start": "14:00",
+                "duration": "01:00",
+                "room": "tbd",
+                "slug": "ai-voice-mod-zum-ausprobieren",
+                "url": "",
+                "title": "AI Voice Mod zum Ausprobieren",
+                "subtitle": "",
+                "track": null,
+                "type": "hands-on",
+                "language": "de",
+                "abstract": "Ergänzung zum Talk \"DIGITAL SONIC IDENTITIES - An ...",
+                "description": "Ergänzung zum Talk \"DIGITAL SONIC IDENTITIES - An ethical debate on AI voice tech in gaming\" - Probiere selbst aus, wie Gamer:innen mit AI Voice Modification Tools in Game-Voice Chats ihre Stimme verändern.",
+                "persons": [
+                  {
+                    "name": "Sheerah Kim",
+                    "public_name": "Sheerah Kim",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "eeb94b83-1f6d-4b70-b22b-80091556e5fb",
+                "id": 1770227732,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Eingangsbereich",
+                "slug": "winterkongress-live-cartoons",
+                "url": "",
+                "title": "Winterkongress Live-Cartoons",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Work in progress ;-) \nKommt regelmässig vorbei und...",
+                "description": "Work in progress ;-) \nKommt regelmässig vorbei und schaut euch die neuesten Cartoons vom diesjährigen Winterkongress an! ",
+                "persons": [
+                  {
+                    "name": "Alex Steiner, brotcast.ch",
+                    "public_name": "Alex Steiner, brotcast.ch",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "c38b2f93-53ab-4f9f-a06f-72ac22e88352",
+                "id": 1770227575,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "bilderausstellung",
+                "url": "",
+                "title": "Bilderausstellung",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Ausgewählte Cartoons...",
+                "description": "Ausgewählte Cartoons",
+                "persons": [
+                  {
+                    "name": "Joachim Zahn, zischtig.ch",
+                    "public_name": "Joachim Zahn, zischtig.ch",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "4dbd5b68-c90d-4f44-b36b-b173a97cfe52",
+                "id": 1770227626,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "leave-us-alone-(2024)",
+                "url": "",
+                "title": "Leave us alone (2024)",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "en",
+                "abstract": "Watch the surveillance industry in an intimate mom...",
+                "description": "Watch the surveillance industry in an intimate moment, interactive robotic installation.",
+                "persons": [
+                  {
+                    "name": "Ivo Herzig",
+                    "public_name": "Ivo Herzig",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "af66143d-5192-4792-a8a4-7ac7ee34ae95",
+                "id": 1770227621,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "überall",
+                "slug": "posterausstellung",
+                "url": "",
+                "title": "Posterausstellung",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Auswahl der Poster/T-Shirt-Motive der diesjährigen...",
+                "description": "Auswahl der Poster/T-Shirt-Motive der diesjährigen MountainBytes",
+                "persons": [
+                  {
+                    "name": "MountainBytes",
+                    "public_name": "MountainBytes",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "b853af2f-eded-4de4-877a-e13ee8b17b18",
+                "id": 1770227745,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Lounge / Projektorraum",
+                "slug": "demos-und-mehr",
+                "url": "",
+                "title": "Demos und mehr",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Auswahl an Demos in entspanntem Ambiente...",
+                "description": "Auswahl an Demos in entspanntem Ambiente",
+                "persons": [
+                  {
+                    "name": "MountainBytes",
+                    "public_name": "MountainBytes",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "3419f505-2ae2-4071-9256-b9593780e9f4",
+                "id": 1770227726,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "drei-digitale-zukünfte-der-demokratie-2050",
+                "url": "",
+                "title": "Drei digitale Zukünfte der Demokratie 2050",
+                "subtitle": "",
+                "track": null,
+                "type": "exhibition",
+                "language": "de",
+                "abstract": "Wie wirkt sich die Digitalisierung auf unsere Demo...",
+                "description": "Wie wirkt sich die Digitalisierung auf unsere Demokratie aus? - Zukunftsszenarien für eine (digitale) Demokratie im Jahr 2050, erzählt durch je eine Kurzgeschichte und ein spekulatives Artefakt.\n",
+                "persons": [
+                  {
+                    "name": "Dezentrum",
+                    "public_name": "Dezentrum",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "59acc69f-8406-480d-a928-6aca62f69a47",
+                "id": 1770227654,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "algorithmwatch-ch",
+                "url": "",
+                "title": "AlgorithmWatch CH",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "AlgorithmWatch CH",
+                    "public_name": "AlgorithmWatch CH",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "3c8f9b02-7a99-4531-b7e8-f1365e4bfd72",
+                "id": 1770227672,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "opendata.ch",
+                "url": "",
+                "title": "Opendata.ch",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "Opendata.ch",
+                    "public_name": "Opendata.ch",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "6ba2fdf6-f78d-464a-8814-a92b6704a2f0",
+                "id": 1770227696,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "woz-die-wochenzeitung",
+                "url": "",
+                "title": "WOZ Die Wochenzeitung",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "WOZ Die Wochenzeitung",
+                    "public_name": "WOZ Die Wochenzeitung",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "1aaf3683-084b-42c8-af3f-f949f27d2c0a",
+                "id": 1770227539,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "wikimedia",
+                "url": "",
+                "title": "Wikimedia",
+                "subtitle": "",
+                "track": null,
+                "type": "infobooth",
+                "language": "de",
+                "abstract": "Infostand...",
+                "description": "Infostand",
+                "persons": [
+                  {
+                    "name": "Wikimedia",
+                    "public_name": "Wikimedia",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "7424e9c5-45ba-4663-b474-77a92f5aa3e4",
+                "id": 1770227523,
+                "date": "2026-02-21T20:00:00+01:00",
+                "start": "20:00",
+                "duration": "04:00",
+                "room": "Markthalle",
+                "slug": "abbau-markthalle",
+                "url": "",
+                "title": "Abbau Markthalle",
+                "subtitle": "",
+                "track": null,
+                "type": "other",
+                "language": "de",
+                "abstract": "Abbau der Markthalle - Helfer:innen gesucht!...",
+                "description": "Abbau der Markthalle - Helfer:innen gesucht!",
+                "persons": [
+                  {
+                    "name": "Team Winterkongress",
+                    "public_name": "Team Winterkongress",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              },
+              {
+                "guid": "380886fd-e9ab-45ef-85c6-29fef7c76bac",
+                "id": 1770232888,
+                "date": "2026-02-21T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "09:00",
+                "room": "Markt- und Ausstellungsbereich",
+                "slug": "ki-escape-game-\"orakel\"",
+                "url": "",
+                "title": "KI Escape Game \"Orakel\"",
+                "subtitle": "",
+                "track": null,
+                "type": "game",
+                "language": "de",
+                "abstract": "Scan den QR-Code und knacke den Zahlencode. \nSpoil...",
+                "description": "Scan den QR-Code und knacke den Zahlencode. \nSpoiler: Chatbots können lügen ;-)",
+                "persons": [
+                  {
+                    "name": "Intersections",
+                    "public_name": "Intersections",
+                    "id": 0
+                  }
+                ],
+                "links": [],
+                "attachments": []
+              }
+            ]
+          }
+        }
+      ],
+      "rooms": [
+        {
+          "name": "SoS-Kubus",
+          "guid": "679f27ba-f9ba-41d4-b27a-980f5a5135ee"
+        }
+      ]
+    }
+  }
+}
