@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #000000;
+    --accent-color: #4aa84e;
+    --light-bg: #ffffff;
+    --card-bg: #f8f9fa; 
+    --text-color: #212529;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--primary-color);
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem); 
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.1;
+    white-space: normal; 
+    word-wrap: break-word;
+}
+
+.header-subtitle {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: #666;
+    margin-top: 5px;
+    white-space: normal;
+}
+
+.logo-img {
+    height: 50px; 
+    width: auto;
+    margin-right: 15px;
+    flex-shrink: 0; 
+}
+
+.btn-success {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0; 
+    padding: 12px 24px;
+    transition: all 0.2s ease;
+    white-space: nowrap; 
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+    background-color: #4aa84e !important; 
+    border-color: #4aa84e !important;
+    box-shadow: 0 4px 10px rgba(85, 205, 91, 0.449);
+}
+
+.card {
+    border: 1px solid #e9ecef !important; 
+    border-radius: 0 !important; 
+    background-color: white; 
+    box-shadow: none; 
+}
+
+.border-primary {
+    border-left: 6px solid var(--accent-color) !important;
+}
+
+.sticky-top.bg-light {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+    color: #6c757d; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    border: none; 
+    border-bottom: 4px solid transparent; 
+    transition: color 0.1s, border-bottom 0.1s;
+    background: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--primary-color) !important; 
+    border-bottom: 4px solid var(--accent-color) !important; 
+    isolation: isolate; 
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color) !important; 
+    border-bottom: 4px solid var(--accent-color) !important; 
+    background-color: transparent;
+}
+
+.badge {
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.badge.bg-info {
+    background-color: var(--primary-color) !important; 
+    color: white !important;
+}
+
+.badge.bg-light {
+    background-color: #e9ecef !important;
+    color: #000 !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+/* Event-Type Farben für Badges */
+.event-type-talk {
+    background-color: #4aa84e !important;
+    color: white !important;
+}
+
+.event-type-workshop {
+    background-color: #98ee99 !important;
+    color: white !important;
+}
+
+.event-type-discussion {
+    background-color: #f7b731 !important;
+    color: #000 !important;
+}
+
+.event-type-hands-on {
+    background-color: #9ccaf8 !important;
+    color: #000 !important;
+}
+
+.event-type-game {
+    background-color: #0984e3 !important;
+    color: white !important;
+}
+
+.event-type-infobooth {
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+.event-type-other {
+    background-color: #acb6bd !important;
+    color: white !important;
+}
+
+.event-type-meeting {
+    background-color: #f8e5a1 !important;
+    color: #000 !important;
+}
+
+.event-type-exhibition {
+    background-color: #16a085 !important;
+    color: white !important;
+}
+
+/* Border-Farben für Cards */
+.border-type-talk {
+    border-left: 6px solid #4aa84e !important;
+}
+
+.border-type-workshop {
+    border-left: 6px solid #98ee99 !important;
+}
+
+.border-type-discussion {
+    border-left: 6px solid #f7b731 !important;
+}
+
+.border-type-hands-on {
+    border-left: 6px solid #9ccaf8 !important;
+}
+
+.border-type-game {
+    border-left: 6px solid #0984e3 !important;
+}
+
+.border-type-infobooth {
+    border-left: 6px solid #000000 !important;
+}
+
+.border-type-other {
+    border-left: 6px solid #acb6bd !important;
+}
+
+.border-type-meeting {
+    border-left: 6px solid #f8e5a1 !important;
+}
+
+.border-type-exhibition {
+    border-left: 6px solid #16a085 !important;
+}
+
+.alert-light {
+    background-color: #ffffff;
+    border: 2px solid var(--primary-color); 
+    color: var(--text-color);
+    border-radius: 0;
+}
+
+.alert-heading {
+    color: var(--accent-color) !important; 
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
