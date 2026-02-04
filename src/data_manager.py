@@ -23,7 +23,6 @@ class DataManager:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
 
     def reload_data(self):
-        """Reload data from file to ensure freshness"""
         self.data = self._load_data()
         return self.data
 
