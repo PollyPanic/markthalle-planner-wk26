@@ -1,4 +1,10 @@
-JSON_FILE = 'data/schedule.json'
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+JSON_FILE = os.path.join(BASE_DIR, 'data', 'schedule.json')
+SLIDES_JSON_FILE = os.path.join(BASE_DIR, 'data', 'slides.json')
+APP_PATH = '/e_projekte/markthalle-winterkongress/'
 LOGO_FILENAME = 'logo_kongress.svg'
 
 TYPE_DISPLAY_TO_INTERNAL = {
